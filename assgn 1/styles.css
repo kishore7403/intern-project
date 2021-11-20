@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mainContainer{
+    border: black solid 2px;
+    padding: 10px;
+
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    
+
+    padding: 10px;
+}
+
+.inputContainer > div{
+    margin: 10px;
+}
+
+.border-right{
+    padding: 5px;
+    border-right: black solid 2px;
+}
+#selectSource{
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    border: none;
+    line-height: 25px;
+
+}
+
+#namePipeline,#projectName,#bucketName,#cloudStorage,#runEvery{
+    border: none;
+    background-color: rgb(236, 236, 236);
+    line-height: 30px;
+}
+#gcsCredentials{
+    border: none;
+    background-color: rgb(134, 134, 134);
+    line-height: 25px;
+}
+::placeholder{
+    color: rgb(121, 121, 121);
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content:space-evenly;
+
+
+}
+
+.formButtons{
+    background-color: rgb(32, 168, 178);
+    padding: 15px 60px;
+
+
+}
+
+.formButtons:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
+/* projectName
+bucketName
+cloudStorage
+gcsCredentials
+runEvery */

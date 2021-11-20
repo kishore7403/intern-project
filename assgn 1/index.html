@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Intern</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainContainer">        
+        <form id="myform" action="" method="GET">
+            <div class="inputContainer">
+
+                <div>
+                    
+                    <label class="border-right" for="selectSource">Source :</label>
+                    <input id="selectSource" name="selectSource" type="text" size="30" value="Google cloud Storage" readonly>
+                </div>    
+                <div>
+                    <label class="border-right" for="namePipeline">Provide a name for pipeline:</label>
+                    <input id="namePipeline" name="namePipeline" type="text" size="30" placeholder="e.g., cust_shop_energy_gateway001" >
+                </div>
+
+                <div>
+                    <label class="border-right" for="projectName">GCS project name :</label>
+                    <input id="projectName" name="projectName" type="text" size="30" placeholder="project-id" >
+                </div>
+
+                <div>
+                    <label class="border-right" for="bucketName">GCS bucket name :</label>
+                    <input id="bucketName" name="bucketName" type="text" size="30" placeholder="gs://your-bucket">
+                </div>
+
+                <div>
+                    <label class="border-right" for="cloudStorage">Input Cloud Storage File(s) :</label>
+                    <input id="cloudStorage" name="cloudStorage" type="text" size="30" placeholder="GCS location of your files " >
+                </div>
+
+                <div>
+                    <label class="border-right" for="gcsCredentials">GCS credentials :</label>
+                    <input id="gcsCredentials" name="gcsCredentials" type="text" size="30" >
+                </div>
+
+                <div>
+                    <label class="border-right" for="runEvery">Run Every :</label>
+                    <input id="runEvery" name="runEvery" type="text" size="30" placeholder="(in minutes)">
+                </div>
+            </div>
+
+            <div class="buttonContainer">
+                <div>
+                    <button id="submitButton" class="formButtons" >Create</button>
+                </div>
+                <div>
+                    <button class="formButtons">Cancel</button>
+                </div>
+
+            </div>
+        </form>
+    </div>    
+
+
+    <script type="text/javascript"  src="script.js" charset="utf-8"></script>
+</body>
+</html>
